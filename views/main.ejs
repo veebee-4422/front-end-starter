@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home | Ubergrad</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="header-container">
+                <header>
+                    <div class="header">
+                        <div class="logo">
+                            <div class="tbar">
+                                <span> 
+                                    <button>
+                                        <svg focusable="false" viewBox="0 0 24 24" class="tbar-svg">
+                                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                                        </svg>
+                                    </button>
+                                </span>
+                                <div class="dropdown-content">
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the USA</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the UK</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the Canada</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the Australia</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the New Zealand</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the Ireland</div></a>
+                                </div>
+                            </div>
+                            <div class="logo-img">
+                                <h6>
+                                    <a href="#"><img class="cursor-pointer" src="https://dxo1brvq3i3n2.cloudfront.net/media/ubergrad/website-assets/logo/Ubergrad_transparent-logo.png" style="width: 176px;"></a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="countries">
+                            <div class="hover-underline-animation pad-l-r dropdown">
+                                <span>
+                                    <a href="#"class="link">
+                                    Countries
+                                    </a>
+                                </span>
+                                <div class="dropdown-content">
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the USA</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the UK</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the Canada</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the Australia</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the New Zealand</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Study in the Ireland</div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unis"> 
+                            <div class="hover-underline-animation pad-l-r dropdown">
+                                <span>
+                                    <a href="#"class="link">
+                                    Universities
+                                    </a>
+                                </span>
+                                <div class="dropdown-content">
+                                    <a href="#" class="link"><div class="dropdown-item">Universities in the USA</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Universities in the UK</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Universities in the Canada</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Universities in the Australia</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Universities in the New Zealand</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">Universities in the Ireland</div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exams">
+                            <div class="hover-underline-animation pad-l-r dropdown">
+                                <span>
+                                    <a href="#"class="link">
+                                    Exams
+                                    </a>
+                                </span>
+                                <div class="dropdown-content">
+                                    <a href="#" class="link"><div class="dropdown-item">All about GRE</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">All about IELTS</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">All about TOEFL</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">All about GMAT</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">All about Duolingo</div></a>
+                                    <a href="#" class="link"><div class="dropdown-item">All about PTE</div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="counsel">
+                            <div class="counsel-int-div">
+                                <a href="#">
+                                    <span class="counsel-span"><button class="counsel-button" tabindex="0" type="button">
+                                        TALK TO UBERGRAD COUNSELLOR
+                                    </button></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="log-sign">
+                            <div class="login">
+                                <span class="log-sign-span hover-underline-animation">
+                                    <a href="/logout" class="link">
+                                    Logout
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="pad-l-r sep">/</div>
+                            <div class="signup">
+                                <span class="log-sign-span hover-underline-animation">
+                                    <a href="/register" class="link">
+                                    Sign Up
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="main-container">
+                <div class="pic-content" style="background-image: url(&quot;https://dxo1brvq3i3n2.cloudfront.net/media/ubergrad/website-assets/hero_images/study_in_usa.jpg&quot;);">
+                    <div class="pic-title">
+                        <h2 class="pic-h2"><%= page.courseTitle %></h2>
+                        <hr class="hr"><br>
+                        <h3 class="MuiTypography-root jss34 MuiTypography-subtitle1"><%= page.courseSubTitle %></h3>
+                    </div>
+                </div>
+                <div class="no-pic-content">
+                    <div class="intro">
+                        <div class="intro-title">
+                            <hr class="hr">
+                            <h2 class="no-pic-h2"><%= page.courseIntroTitle %></h2>
+                        </div>
+                        <div class="intro-text">
+                            <%- page.courseIntroContent %>
+                        </div>
+                    </div>
+                    <div class="pop-spec">
+                        <div class="pop-spec-title">
+                            <hr class="hr">
+                            <h2 class="no-pic-h2"><%= page.popularTitle %></h2>
+                            <h4 class="no-pic-h4"><%= page.popularSubTitle %></h4>
+                        </div>
+                        <div class="pop-spec-grid">
+                            <% page.popularList.forEach(element => { %>
+                                <div class="pop-spec-item"><%= element %></div> 
+                            <% }); %>
+                        </div>
+                    </div>
+                    <div class="reqs">
+                        <div class="reqs-title">
+                            <hr class="hr">
+                            <h2 class="no-pic-h2"><%= page.requirementsTitle %></h2>
+                        </div>
+                        <div class="reqs-grid">
+                            <% Object.entries(page.requirementsContent).forEach(entry => { %>
+                                    <div class="reqs-item-title"><%= entry[0] %></div>
+                                    <div class="reqs-item-desc"><%= entry[1] %></div>
+                            <% }); %>
+                        </div>
+                    </div>
+                    <div class="top-unis">
+                        <div class="top-unis-title">
+                            <hr class="hr">
+                            <h2 class="no-pic-h2"><%= page.topUniversitiesTitle %></h2>
+                            <h4 class="no-pic-h4"><%= page.topUniversitiesSubTitle %></h4>
+                        </div>
+                        <div class="top-unis-grid">
+                            <div class="top-unis-item-head">UNIVERSITY</div>
+                            <div class="top-unis-item-head">RANKING</div>
+                            <div class="top-unis-item-head">FEE</div>
+                            
+                            <% page.topUniversitiesList.forEach(element => { %>
+                                <div class="top-unis-item-name">
+                                    <div class="uni-logo">
+                                        <img src="https://media.istockphoto.com/vectors/color-logo-of-the-school-vector-id1150645589?k=20&m=1150645589&s=612x612&w=0&h=2xbp-Zrro_3e0soj3-sF2bvQWIsX7yAHNa5fHIwFz80=" class= "uni-logo-img" alt="" srcset="">
+                                    </div>
+                                    <div class="uni-name">
+                                        <%= element.Name %>
+                                    </div>
+                                </div>
+                                <div class="top-unis-item"><%= element.Primary_Rank %></div>
+                                <div class="top-unis-item">
+                                    $<%= element.Average_Tuition_Fees %>
+                                     / 
+                                     <%= Number((element.Average_Tuition_Fees*element.Average_Tuition_Fees_Currency.Conversion_Rate/100000).toFixed(2)); %>
+                                     lakh INR
+                                </div>
+                            <% }); %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
